@@ -5,14 +5,6 @@ Java is a general-purpose, concurrent, class-based, object-oriented computer pro
 
 - [Class](#class)
 - [Loops](#Loops)
-- [Constants](#constants)
-- [Functions](#functions)
-- [Strings](#strings)
-- [Numbers](#numbers)
-- [Boolean](#boolean)
-- [Pointers](#pointers)
-- [Struct](#struct)
-- [Linked List](#linked-list)
 
 ## Class
 In Java, everything goes in a class. You’ll type your source code file (with a .java extension), then compile it into a new class file (with a .class extension). When you run your program, you’re really running a class. Running a program means telling the Java Virtual Machine (JVM) to “Load the Hello class, then start executing its main() method. Keep running ‘til all the code in main is finished.”
