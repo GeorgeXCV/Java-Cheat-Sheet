@@ -10,6 +10,8 @@ Java is a general-purpose, concurrent, class-based, object-oriented computer pro
 - [Variables](#variables)
 - [Operators](#operators)
 - [Control Structures](#control-structures)
+- [Networking](#networking)
+
 
 ## Java API
 In the Java  API, classes are grouped into packages. ArrayList is in the package called java.util, which holds a pile of utility classes. You have to know the full name* of the class you want to use in your code.
@@ -466,4 +468,26 @@ switch (month) {
              break;
 }
 System.out.println("Switch Case Result: " + monthString);
+```
+
+## Networking
+
+All the low-level networking details are taken care of by classes in the java.net library.  One of Java’s big benefits is that sending and receiving data over a network is just I/O with a slightly different connection stream at the end of the chain.
+
+
+```java
+// Make a socket connection to the server
+Socket chatSocket = new Socket(“196.164.1.103”, 5000);
+
+// Make an InputStreamReader chained to the Socket’s low-level (connection) input stream
+InputStreamReader stream = new InputStreamReader(chatSocket.getInputStream());
+
+// Make a BufferedReader and read
+BufferedReader reader = new BufferedReader(stream);
+String message = reader.readLine();
+
+// Make a PrintWriter and write
+PrintWriter writer = new PrintWriter(chatSocket.getOutputStream());
+writer.println(“message to send”);
+writer.print(“another message”);
 ```
