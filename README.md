@@ -3,9 +3,23 @@ Java is a general-purpose, concurrent, class-based, object-oriented computer pro
 
 ## Table of Contents
 
+- [Java API](#java-api)
 - [Class](#class)
-- [Loops](#Loops)
+- [Loops](#loops)
 
+## Java API
+In the Java  API, classes are grouped into packages. ArrayList is in the package called java.util, which holds a pile of utility classes. You have to know the full name* of the class you want to use in your code.
+
+```java
+import java.util.ArrayList;
+```
+
+Type the full name each time you use it, (unless the class is in the java.lang package). 
+
+```java
+java.util.ArrayList<Dog> list = new java.util.ArrayList<Dog>();
+```
+  
 ## Class
 In Java, everything goes in a class. You’ll type your source code file (with a .java extension), then compile it into a new class file (with a .class extension). When you run your program, you’re really running a class. Running a program means telling the Java Virtual Machine (JVM) to “Load the Hello class, then start executing its main() method. Keep running ‘til all the code in main is finished.”
 
